@@ -134,10 +134,10 @@ ul.contacts {
 
 .footer,
 .footer a img {
-  width: 100%;
+  width: 50%;
   margin-bottom: 10px;
   display: flex;
   text-align: center;
-  justify-content: space-evenly;
+  justify-content: center ;
   align-items: center;
 }
