@@ -70,7 +70,7 @@ ul {
 }
 
 ul li {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   list-style: none;
 }
 
@@ -132,12 +132,15 @@ ul.contacts {
   font-size: 100%;
 }
 
-.footer,
-.footer a img {
-  width: 50%;
+.footer {
+  width: 100%;
   margin-bottom: 10px;
   display: flex;
   text-align: center;
-  justify-content: center ;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+.footer a img {
+  width: 20%;
 }
