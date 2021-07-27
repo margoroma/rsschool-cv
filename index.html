@@ -53,15 +53,15 @@
             <pre class="cod">
             <code>
     else {
-    for (i = 1; i < num_list.length; ++i) {
+    for (i = 1; i &lt; num_list.length; ++i) {
         if (num_list[i] > max) { max = num_list[i]; }
     }
     let max_ind = num_list.indexOf(max);
     temp = num_list[0];
     num_list[0] = num_list[max_ind];
     num_list[max_ind] = temp;
-    for (i = 1; i < num_list.length; ++i) {
-    if (num_list[i] < min) { min = num_list[i]; }
+    for (i = 1; i &lt; num_list.length; ++i) {
+    if (num_list[i] &lt; min) { min = num_list[i]; }
     }
     let min_ind = num_list.indexOf(min)
     temp = num_list[2];
