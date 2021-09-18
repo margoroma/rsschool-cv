@@ -13,32 +13,49 @@
         <!-- HEADER -->
         <header class="header">
             <div class="header_content">
-                <nav class="header-nav">
-                    <ul>
-                        <li><a href="#home" class="nav_link">Home</a></li>
-                        <li><a href="#about" class="nav_link">Summary</a></li>
-                        <li><a href="#education" class="nav_link">Education</a></li>
-                        <li><a href="#skills" class="nav_link"></i>Skills</a></li>
-                        <li><a href="#work_experience" class="nav_link">Experience</a></li>
-                        <li><a href="#code_example" class="nav_link">Code</a></li>
-                        <li><a href="#languages" class="nav_link">Languages</a></li>
-                        <li><a href="#hobbies" class="nav_link">Hobbies</a></li>
-                        <li><a href="#contacts" class="nav_link">Contacts</a></li>
-                    </ul>
-                </nav>
+                <!-- <a href="" class="header_logo"></a> -->
+                <div class="header_menu">
+                    <div class="header_icon"></div>
+                    <nav class="header-nav">
+                        <ul>
+                            <li><a href="#home" class="nav_link">Home</a></li>
+                            <li><a href="#about" class="nav_link">Summary</a></li>
+                            <li><a href="#education" class="nav_link">Education</a></li>
+                            <li><a href="#skills" class="nav_link"></i>Skills</a></li>
+                            <li><a href="#work_experience" class="nav_link">Experience</a></li>
+                            <li><a href="#code_example" class="nav_link">Code</a></li>
+                            <li><a href="#languages" class="nav_link">Languages</a></li>
+                            <li><a href="#hobbies" class="nav_link">Hobbies</a></li>
+                            <li><a href="#contacts" class="nav_link">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
             </div>
         </header>
 
-        <main class="main_content">
-            <!-- ASIDE MENU -->
-            <div class="left_content">
-                <aside class="aside_content">
+        <main>
+            <div class="info">
+                <div class="photos">
                     <!-- PHOTO -->
                     <section class="section_aside" id="home">
                         <figure class="foto">
                             <img class="foto" src="./img/fotof.jpg" alt="Avatar" width="150">
                         </figure>
                     </section>
+                </div>
+                <div class="myname">
+                    <!-- NAME -->
+                    <section class="section_content" id="name">
+                        <h1 class="hidden-title">MARHARYTA RAMANENKA</h1>
+                        <h3 class="prof">Python developer, Web developer</h3>
+                    </section>
+                </div>
+            </div>
+            <div class="main_content">
+            <!-- ASIDE MENU -->
+            <div class="left_content">
+                <aside class="aside_content">
                     <!-- CONTACTS -->
                     <section class="section_aside" id="contacts">
                         <h2 class="left_titles">Contacts</h2>
@@ -92,11 +109,6 @@
             <!-- GENERAL MENU -->
             <div class="rigth_content">
                 <article class="article_content">
-                    <!-- NAME -->
-                    <section class="section_content" id="name">
-                        <h1 class="hidden-title">MARHARYTA RAMANENKA</h1>
-                        <h3 class="prof">Python developer, Web developer</h3>
-                    </section>
                     <!-- ABOUT -->
                     <section class="section_content" id="about">
                         <h2>Summary</h2>
@@ -133,7 +145,7 @@
                           </div>
                     </section>
                     <!-- WORK EXPIRIENCE -->
-                    <section class="section_content" id="work_expirience">
+                    <section class="section_content" id="work_experience">
                         <h2>Work expirience</h2>
                         <div class="work_container">
                             <div class="work_content">
@@ -227,6 +239,7 @@ return res;
                     </section>
                 </article>
             </div>
+        </div>
         </main>
         <!-- FOOTER -->
         <footer class="footer_content" id="footer">
