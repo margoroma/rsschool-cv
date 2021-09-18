@@ -1,138 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700&display=swap"
-      rel="stylesheet"/>
-    <title>MARHARYTA RAMANENKA</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <title>CV</title>
+</head>
+<body>
     <div class="content">
-      <header>
-        <img class="photo" src="./img/fotof.jpg" alt="Avatar"/>
-        <div class="title">
-          <h1>MARHARYTA RAMANENKA</h1>
-        </div>
-      </header>
+        <!-- HEADER -->
+        <header class="header_content">
 
-      <article>
-        <h2>Contact information</h2>
-        <p class="secondary">
-            <ul>
-              <li>Phone : +375297501428</li>
-              <li>Email: <a href="mailto:margoroma2010@gmail.com">margoroma2010@gmail.com</a></li>
-              <li>Skype: margoroma</li>
-              <li>Linkedin: <a href="https://www.linkedin.com/in/margarita-romanenko-087787132/">Margarita Romanenko</a></li>
-            </ul>
-        </p>
+        </header>
 
-        <h2>Summary</h2>
-        <p class="secondary">
-            Python developer junior, Django Framework. 
-            More than 10 years of experience in mechanical engineering 
-            (engineering calculations in software like ANSYS Workbench and MSC ADAMS).
-        </p>
+        <main class="main_content">
+            <!-- ASIDE MENU -->
+            <div class="left_content">
+                <aside class="aside_content">
+                    <!-- PHOTO -->
+                    <section class="section_aside" id="foto">
+                        <figure class="foto">
+                            <img class="foto" src="./img/fotof.jpg" alt="Avatar" width="250">
+                        </figure>
+                    </section>
+                    <!-- CONTACTS -->
+                    <section class="section_aside" id="contacts">
+                        <h2 class="left_titles">Contacts</h2>
+                        <ul>
+                            <li>
+                                <i class="location"><img src="./img/icons/home.svg" alt="Home"
+                                    width="40">Minsk, BELARUS</i>
+                            </li>
+                            <li>
+                                <i class="phone"><img src="./img/icons/phone.png" alt="Phone"
+                                    width="40">+375297501428</i>
+                            </li>
+                            <li>
+                                <i class="email"><img src="./img/icons/mail.svg" alt="E-mail"
+                                    width="40">margoroma2010@gmail.com</i>
+                            </li>
+                            <li>
+                                <i class="linkedin"><img src="./img/icons/lk1.svg" alt="Linkedin"
+                                width="40"><a href="https://www.linkedin.com/in/margarita-romanenko-087787132/">Margarita Romanenko</a></i>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- SKILLS -->
+                    <section class="section_aside" id="skills">
+                        <h2 class="left_titles">Skills</h2>
+                        <div class="skill_content">
+                            <ul class="skills_data">
+                                <li class="skills_name"><span class="skills_circle">&#9787;&#9787;&#9786;&#9786;&#9786;</span> JavaScript</li>
+                                <li class="skills_name"><span class="skills_circle">&#9787;&#9787;&#9786;&#9786;&#9786;</span> Python</li>
+                                <li class="skills_name"><span class="skills_circle">&#9787;&#9787;&#9786;&#9786;&#9786;</span> HTML/CSS</li>         
+                              </ul>
+                        </div>
+                    </section>
+                    <!-- LANGUAGES -->
+                    <section class="section_aside" id="languages">
+                        <h2 class="left_titles">Foreign languages</h2>
+                        <ul class="languages_list">
+                            <li class="languages_name">&#9675;&#160;English(A2/B1)</li>
+                            <li class="languages_name">&#9675;&#160;Spanish(B2)</li>
+                        </ul>
+                       
+                    </section>
+                </aside>
+            </div>
+            <!-- GENERAL MENU -->
+            <div class="rigth_content">
+                <article class="article_content">
+                    <!-- NAME -->
+                    <section class="section_content" id="name">
+                        <h1 class="hidden-title">MARHARYTA RAMANENKA</h1>
+                        <h3 class="prof">Python developer, Web-developer</h3>
+                    </section>
+                    <!-- ABOUT -->
+                    <section class="section_content" id="about">
+                        <h2>Summary</h2>
+                        <p class="about">
+                            Frontend developer junior, Python developer junior, Django Framework. 
+                            More than 10 years of experience in mechanical engineering 
+                            (engineering calculations in software like ANSYS Workbench and MSC ADAMS).
+                        </p>
+                    </section>
+                    <!-- EDUCATION -->
+                    <section class="section_content" id="education">
+                        <h2>Education</h2>
+                        <div class="education_container">
+                            <div class="education_content">
+                                <h4 class="education_title">Specialization: Automotive Engineering (mechanical engineer)</h4>
+                                <span class="education_studies">Belarusian National Technical University</span></br>
+                                <span class="dates">2004 - 2009</span>
+                            </div>
+                            <div class="education_content">
+                                <h4 class="education_title">Specialization: Electrical and Electronics Engineering (postgraduate student)</h4>
+                                <span class="education_studies">Universidad Tecnica Federico Santa Maria</span></br>
+                                <span class="dates">March 2018 - August 2018</span>
+                            </div>
+                            <div class="education_content">
+                                <h4 class="education_title">Comprehensive course on web development in Python</h4>
+                                <span class="education_studies">Educational Center of HTP</span></br>
+                                <span class="dates">March 2021 - June 2021</span>
+                            </div>
+                            <div class="education_content">
+                                <h4 class="education_title">Front-end development</h4>
+                                <span class="education_studies">RS School</span>
+                                <span class="dates">June 2021 - present</span>
+                            </div>
+                          </div>
+                    </section>
+                    <!-- WORK EXPIRIENCE -->
+                    <section class="section_content" id="work_expirience">
+                        <h2>Work expirience</h2>
+                    </section>
+                    <!-- CODE EXAMPLE -->
+                    <section class="section_content" id="code_example">
+                        <h2>Code example</h2>
+                        <div class="my_code">
+                            <pre class="prettyprint">
+const reverseRes = {};
+Object.entries(results).forEach(([key, value]) => {
+reverseRes[value] = key })
+allKeys = Object.keys(reverseRes);
+let myResult = allKeys.filter(x => x >= 60);
+myResult.sort(function(a, b) {
+return a - b; });
+myResult = myResult.reverse();
+let res = myResult.map(function (key) { return reverseRes[key]; })
+return res;
+                            </pre>
+                        </div>
+                    </section>
+                    <!-- HOBBIES -->
+                    <section class="section_content" id="hobbies">
+                        <h2>Hobbies</h2>
+                        <div class="hobby_list">
+                            <ul class="hobbies_list" type="circle">
+                                <li class="hobby_item">&#9675;&#160;<span>Sport (swimming, cycling)</span></li>
+                                <li class="hobby_item">&#9675;&#160;<span>Reading books</span></li>
+                            </ul>
+                            <ul class="hobbies_list" type="circle">
+                                <li class="hobby_item">&#9675;&#160;<span>Watching british movies and series</span></li>
+                                <li class="hobby_item">&#9675;&#160;<span>Self-education</span></li>
+                            </ul>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer class="footer_content">
 
-        <section>
-          <h2>Skills</h2>
-          <div class="secondary">
-            <ul>
-              <li>Python</li>
-              <li>JavaScript</li>
-              <li>HTML5/CSS3</li>
-              <li>Node.js</li>
-              <li>Git</li>
-            </ul>
-          </div>
-        </section>
-
-        <section>
-          <h2>Code examples</h2>
-          <p class="secondarycode">
-          <i>Rearrange Number to Get its Maximum (JavaScript)</i>
-            <pre class="cod">
-            <code>
-    else {
-    for (i = 1; i < num_list.length; ++i) {
-        if (num_list[i] > max) { max = num_list[i]; }
-    }
-    let max_ind = num_list.indexOf(max);
-    temp = num_list[0];
-    num_list[0] = num_list[max_ind];
-    num_list[max_ind] = temp;
-    for (i = 1; i < num_list.length; ++i) {
-    if (num_list[i] < min) { min = num_list[i]; }
-    }
-    let min_ind = num_list.indexOf(min)
-    temp = num_list[2];
-    num_list[2] = num_list[min_ind];
-    num_list[min_ind] = temp;
-    return Number(num_list.join(''));
-    }
-            </code>
-            </pre>
-             <i>The first function to find a nested priority expression (Python)</i>
-            <pre class="cod">
-            <code>
-    def recurs(st):
-        st = st.replace(" ","")
-        if '(' not in st:
-            return st
-        else:
-            a = st.rfind('(')
-            n = len(st[:a])+st[a:].find(')')
-            st1 = st[a+1:n]
-            res = operat(st1)
-            st = st.replace(st[a:n+1],str(res))
-            st = check(st)
-            return recurs(st)
-            </code>
-            </pre>
-          </p>
-        </section>
-
-        <section>
-          <h2>Education</h2>
-            <p><span class="edu">June - July 2021 Diving in Python by Coursera (on-line course)</span></p>
-
-            <p><span class="edu">March 2021 - June 2021 – Educational Center of HTP</span></p>
-            <p class="secondary">
-            Course: Comprehensive course on web development in Python </br>
-            Project: Development of a site in Django Framework: A system for testing student’s knowledge with differentiated accessto creating and controlling tests for teachers and passing for students.
-            </p>
-
-            <p><span class="edu">March 2018 - August 2018 – Universidad Tecnica Federico Santa Maria</span></p>
-            <p class="secondary">
-            Specialization: Electrical and Electronics Engineering (postgraduate student)
-            </p>
-
-            <p><span class="edu">2004-2009 – Belarusian National Technical University</span></p>
-            <p class="secondary">
-            Specialization: Specialization: Automotive Engineering
-            </p>                        
-
-        </section>
-
-        <section>
-          <h2>English level</h2>
-          <p>A2+/B1</p>
-        </section>
-
-      </article>
-      <hr/>
-      <footer class='footer'>
-
-            <a href="https://github.com/margoroma" target="_blank">
-            <img src="./img/github.svg" alt="IconGithub"/></a>
-            <p>© 2021</p>
-            <a href="https://rs.school/js/" target="_blank">
-            <img src="./img/rs_school_js.svg" alt="IconRSS"/></a>
-            
-      </footer>
+        </footer>
     </div>
-  </body>
+</body>
 </html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700&display=swap"
+      rel="stylesheet"/>
+    <title>MARHARYTA RAMANENKA</title>
+    <link rel="stylesheet" href="./css/style_old.css" />
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <img class="photo" src="./img/fotof.jpg" alt="Avatar"/>
+        <div class="title">
+          <h1>MARHARYTA RAMANENKA</h1>
+        </div>
+      </header>
+
+      <main class="resume">
+
+        <article>
+          <h2>Contact information</h2>
+          <p class="secondary">
+              <ul>
+                <li>Phone : +375297501428</li>
+                <li>Email: <a href="mailto:margoroma2010@gmail.com">margoroma2010@gmail.com</a></li>
+                <li>Skype: margoroma</li>
+                <li>Linkedin: <a href="https://www.linkedin.com/in/margarita-romanenko-087787132/">Margarita Romanenko</a></li>
+              </ul>
+          </p>
+
+          <h2>Summary</h2>
+          <p class="secondary">
+              Python developer junior, Django Framework. 
+              More than 10 years of experience in mechanical engineering 
+              (engineering calculations in software like ANSYS Workbench and MSC ADAMS).
+          </p>
+
+          <section>
+            <h2>Skills</h2>
+            <div class="secondary">
+              <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML5/CSS3</li>
+                <li>Node.js</li>
+                <li>Git</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2>Code examples</h2>
+            <p class="secondarycode">
+            <i>Rearrange Number to Get its Maximum (JavaScript)</i>
+              <pre class="cod">
+              <code>
+      else {
+      for (i = 1; i < num_list.length; ++i) {
+          if (num_list[i] > max) { max = num_list[i]; }
+      }
+      let max_ind = num_list.indexOf(max);
+      temp = num_list[0];
+      num_list[0] = num_list[max_ind];
+      num_list[max_ind] = temp;
+      for (i = 1; i < num_list.length; ++i) {
+      if (num_list[i] < min) { min = num_list[i]; }
+      }
+      let min_ind = num_list.indexOf(min)
+      temp = num_list[2];
+      num_list[2] = num_list[min_ind];
+      num_list[min_ind] = temp;
+      return Number(num_list.join(''));
+      }
+              </code>
+              </pre>
+              <i>The first function to find a nested priority expression (Python)</i>
+              <pre class="cod">
+              <code>
+      def recurs(st):
+          st = st.replace(" ","")
+          if '(' not in st:
+              return st
+          else:
+              a = st.rfind('(')
+              n = len(st[:a])+st[a:].find(')')
+              st1 = st[a+1:n]
+              res = operat(st1)
+              st = st.replace(st[a:n+1],str(res))
+              st = check(st)
+              return recurs(st)
+              </code>
+              </pre>
+            </p>
+          </section>
+
+          <section>
+            <h2>Education</h2>
+              <p><span class="edu">June - July 2021 Diving in Python by Coursera (on-line course)</span></p>
+
+              <p><span class="edu">March 2021 - June 2021 – Educational Center of HTP</span></p>
+              <p class="secondary">
+              Course: Comprehensive course on web development in Python </br>
+              Project: Development of a site in Django Framework: A system for testing student’s knowledge with differentiated accessto creating and controlling tests for teachers and passing for students.
+              </p>
+
+              <p><span class="edu">March 2018 - August 2018 – Universidad Tecnica Federico Santa Maria</span></p>
+              <p class="secondary">
+              Specialization: Electrical and Electronics Engineering (postgraduate student)
+              </p>
+
+              <p><span class="edu">2004-2009 – Belarusian National Technical University</span></p>
+              <p class="secondary">
+              Specialization: Specialization: Automotive Engineering
+              </p>                        
+
+          </section>
+
+          <section>
+            <h2>English level</h2>
+            <p>A2+/B1</p>
+          </section>
+
+        </article>
+      </main>
+      <hr/>
+      <footer class='footer'>
+
+            <a href="https://github.com/margoroma" target="_blank">
+            <img src="./img/github.svg" alt="IconGithub"/></a>
+            <p>© 2021</p>
+            <a href="https://rs.school/js/" target="_blank">
+            <img src="./img/rs_school_js.svg" alt="IconRSS"/ width="70"></a>
+            
+      </footer>
+    </div>
+  </body>
+</html>
