@@ -64,6 +64,61 @@ body{
 	font-family:'storytella';
 	color: var(--text-color);
 }
+
+.header_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px;
+}
+.header-nav {
+    max-width: 720px;
+    max-height: 50px;
+    font-size: 20px;
+}
+
+.header-nav ul,
+.footer-nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav ul {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav a{
+    height: 30px;
+    line-height: 50px;
+    font-weight: 100;
+    margin: 0;
+    transition: 0.2s;
+    font-family: 'Roboto';
+    color: white;
+}
+
+.header-nav a {
+    padding: 0 38px;
+}
+
+li a:hover,
+li a:active {
+    color: var(--main-color);
+}
+
+.header-nav li:first-child a {
+    padding-left: 0;
+}
+
+.header-nav li:last-child a {
+    padding-right: 0;
+}
+
+
+
 p {
     font-size: var(--font-size-text);
     margin-bottom: 10px;
@@ -111,7 +166,7 @@ h4{
 .left_content{
     width: 40%;
     background-color: var(--gray);
-    padding: 50px 50px 0 70px;
+    padding: 50px 20px 0 70px;
 }
 .rigth_content{
     width: 60%;
@@ -126,17 +181,35 @@ h4{
 }
 
 .foto{
-    background-position: center left;
+    text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
+    margin-top: 45px;
 }
 .left_titles{
     padding-left: 5px;
 }
-
+.contact_item{
+    display: flex;
+    position: relative;
+    width: 100%;
+    /* margin-top: 10px; */
+    margin-bottom: 5px;
+    align-items: center;
+}
+.contact_img{
+    text-align: center;
+}
+.contact_content{
+    margin-left: 10px;
+}
 i.linkedin {
     color: var(--text-color);
+}
+.languages_name,
+.skills_name{
+    margin-bottom: 5px;
 }
 .my_code{
     background-color: var(--blue);
@@ -170,6 +243,10 @@ i.linkedin {
 
 .project_figure:hover {
     filter: none;
+}
+
+.hobby_item{
+    margin-bottom: 5px;
 }
 /* footer */
 
