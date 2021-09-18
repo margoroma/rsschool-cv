@@ -22,7 +22,7 @@
                     <!-- PHOTO -->
                     <section class="section_aside" id="foto">
                         <figure class="foto">
-                            <img class="foto" src="./img/fotof.jpg" alt="Avatar" width="250">
+                            <img class="foto" src="./img/fotof.jpg" alt="Avatar" width="150">
                         </figure>
                     </section>
                     <!-- CONTACTS -->
@@ -75,7 +75,7 @@
                     <!-- NAME -->
                     <section class="section_content" id="name">
                         <h1 class="hidden-title">MARHARYTA RAMANENKA</h1>
-                        <h3 class="prof">Python developer, Web-developer</h3>
+                        <h3 class="prof">Python developer, Web developer</h3>
                     </section>
                     <!-- ABOUT -->
                     <section class="section_content" id="about">
@@ -92,44 +92,101 @@
                         <div class="education_container">
                             <div class="education_content">
                                 <h4 class="education_title">Specialization: Automotive Engineering (mechanical engineer)</h4>
-                                <span class="education_studies">Belarusian National Technical University</span></br>
-                                <span class="dates">2004 - 2009</span>
+                                <h4 class="education_studies">Belarusian National Technical University</h4>
+                                <h4 class="dates">2004 - 2009</h4>
                             </div>
                             <div class="education_content">
                                 <h4 class="education_title">Specialization: Electrical and Electronics Engineering (postgraduate student)</h4>
-                                <span class="education_studies">Universidad Tecnica Federico Santa Maria</span></br>
-                                <span class="dates">March 2018 - August 2018</span>
+                                <h4 class="education_studies">Universidad Tecnica Federico Santa Maria</h4>
+                                <h4 class="dates">March 2018 - August 2018</h4>
                             </div>
                             <div class="education_content">
                                 <h4 class="education_title">Comprehensive course on web development in Python</h4>
-                                <span class="education_studies">Educational Center of HTP</span></br>
-                                <span class="dates">March 2021 - June 2021</span>
+                                <h4 class="education_studies">Educational Center of HTP</h4>
+                                <h4 class="dates">March 2021 - June 2021</h4>
                             </div>
                             <div class="education_content">
                                 <h4 class="education_title">Front-end development</h4>
-                                <span class="education_studies">RS School</span>
-                                <span class="dates">June 2021 - present</span>
+                                <h4 class="education_studies">RS School</h4>
+                                <h4 class="dates">June 2021 - present</h4>
                             </div>
                           </div>
                     </section>
                     <!-- WORK EXPIRIENCE -->
                     <section class="section_content" id="work_expirience">
                         <h2>Work expirience</h2>
+                        <div class="work_container">
+                            <div class="work_content">
+                                <h4 class="work_title">Researcher</h4>
+                                <h4 class="education_studies">The Joint Institute of Mechanical Engineering of the National Academy of Sciences of Belarus</h4>
+                                <h4 class="dates">2009-2019</h4>
+                            </div>
+                            <div class="work_content">
+                                <h4 class="work_title">Design Engineer</h4>
+                                <h4 class="education_studies">Unitsky String Technologies</h4>
+                                <h4 class="dates">2019-present</h4>
+                            </div>
+                          </div>
                     </section>
                     <!-- CODE EXAMPLE -->
                     <section class="section_content" id="code_example">
-                        <h2>Code example</h2>
+                        <h2>Code and projects example</h2>
+                        <div class="projects">
+                            <div class="project_content">
+                                <div class="project_head">
+                                    <h4 class="project_title">Clock</h4>
+                                    <p class="project_description">Use HTML, CSS, JavaScript</p>
+                                </div>
+                                <div class="project_img">
+                                    <figure class="project_figure">
+                                    <a target="_blank" href="https://rolling-scopes-school.github.io/margoroma-JSFEPRESCHOOL/js-clock/ ">
+                                        <img src="./img/clock.png" alt="clock" width="128">
+                                    </a>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="project_content">
+                                <div class="project_head">
+                                    <h4 class="project_title">Custom Video Player</h4>
+                                    <p class="project_description">Use HTML, CSS, JavaScript</p>
+                                </div>
+                                <div class="project_img">                
+                                    <figure class="project_figure">
+                                    <a target="_blank" href="https://rolling-scopes-school.github.io/margoroma-JSFEPRESCHOOL/custom-video-player/">
+                                        <img src="./img/player.png" alt="player" width="128">
+                                    </a>
+                                    </figure>  
+                                </div>              
+                            </div>
+                            <div class="project_content">
+                                <div class="project_head">
+                                <h4 class="project_title">Museum</h4>
+                                <p class="project_description">Use HTML, CSS, JavaScript</p>
+                                </div>
+                                <div class="project_img">
+                                    <figure class="project_figure">
+                                    <a target="_blank" href="https://rolling-scopes-school.github.io/margoroma-JSFEPRESCHOOL/museum/">
+                                        <img src="./img/museum.png" alt="app" width="128">
+                                    </a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
                         <div class="my_code">
                             <pre class="prettyprint">
 const reverseRes = {};
 Object.entries(results).forEach(([key, value]) => {
-reverseRes[value] = key })
+    reverseRes[value] = key 
+})
 allKeys = Object.keys(reverseRes);
 let myResult = allKeys.filter(x => x >= 60);
 myResult.sort(function(a, b) {
-return a - b; });
+    return a - b; 
+});
 myResult = myResult.reverse();
-let res = myResult.map(function (key) { return reverseRes[key]; })
+let res = myResult.map(function (key) { 
+    return reverseRes[key]; 
+})
 return res;
                             </pre>
                         </div>
@@ -152,8 +209,18 @@ return res;
             </div>
         </main>
         <!-- FOOTER -->
-        <footer class="footer_content">
-
+        <footer class="footer_content" id="footer">
+            <div class="footer_item" id="footer_item">
+                <a href="https://github.com/margoroma" target="_blank">
+                <img src="./img/icons/octo.svg" alt="Github"></a>
+            </div>
+            <div class="footer_item" id="footer_item">
+                <time class="dates" id="time">2021</time>
+            </div>
+            <div class="footer_item" id="footer_item">
+                <a href="https://rs.school/js/" target="_blank">
+                <img src="img/rs_school_js.svg" alt="IconRSS" width="100"></a>
+            </div>
         </footer>
     </div>
 </body>

@@ -18,9 +18,6 @@ li {
     list-style: none;
 }
 
-img {
-    vertical-align: top;
-}
 h1,
 h2,
 h3,
@@ -46,12 +43,12 @@ body {
 /* color variables */
 
 :root {
-    --main-color: #1fceec;
+    --main-color: #3be0fd;
     --text-color: #ffffff;
     --white: #ffffff;
-    --gray: #5f6163;
-    --light-gray: #e1e1e1;
-    --blue: #829a9e;
+    --gray: #7b7e81;
+    --light-gray: #8a8888;
+    --blue: #96b3b8;
     --font-size-title: 24px;
     --font-family-title: 'Ubuntu Mono', monospace;
     --font-weight-text: normal;
@@ -88,15 +85,22 @@ main {
 h1{
     font-size: 40px;
     font-style: 600;
+    margin-top: 35px;
+    margin-bottom: 30px;
 }
 h2{
     font-family: var(--font-family-title);
     font-size: var(--font-size-title);
     margin-bottom: 30px;
     text-align: left 50px;
+    color: var(--main-color);
 }
 h3{
     font-size: 30px;
+    margin-bottom: 100px;
+}
+h4{
+    margin-bottom: 5px;
 }
 .about{
     text-align: justify;
@@ -115,7 +119,7 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 100px 50px;
+    padding: 100px 50px 20px 30px;
 }
 .section_aside {
     padding: 5px 10px 25px 10px;
@@ -137,7 +141,47 @@ i.linkedin {
 .my_code{
     background-color: var(--blue);
 }
-.education_content{
+.education_content,
+.work_content{
+    margin-bottom: 15px;
+}
+.projects{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.project_title{
+    margin: 5px 0;
+    font-size: 14px;
+}
+.project_description{
+    font-size: 13px;
+}
+.project_figure {
+    filter: grayscale(100%);
+    max-width: 100%;
+    height: auto;
+    transition: filter 0.3s ease 0s;
+}
+
+.project_figure:hover {
+    filter: none;
+}
+/* footer */
+
+#footer{
+    background-color: var(--light-gray); 
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
     margin-bottom: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
