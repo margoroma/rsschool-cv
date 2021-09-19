@@ -65,6 +65,9 @@ body{
 	font-family:'storytella';
 	color: var(--text-color);
 }
+body._lock{
+    overflow: hidden;
+}
 .header{
     position: fixed;
     top: 0;
@@ -83,8 +86,6 @@ body{
     margin: 0px auto;
     display: flex;
     padding: 0px 30px;
-    /* align-items: center; */
-    /* justify-content: space-between; */
 }
 .header_list{
     display: flex;    
@@ -116,7 +117,6 @@ body{
 }
 
 li a:hover{
-/* li a:active{ */
     color: var(--main-color);
 }
 p{
@@ -143,18 +143,19 @@ p{
     width: 100%;
     display: flex;
     margin-top: 60px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     padding: 0 50px;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
 }
-h1{
+.margoroma{
     font-size: 40px;
     font-style: 600;
-    margin-top: 35px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
+
 h2{
     font-family: var(--font-family-title);
     font-size: var(--font-size-title);
@@ -168,6 +169,9 @@ h3{
 }
 h4{
     margin-bottom: 5px;
+}
+h5{
+    display: none;
 }
 
 /* blocks */
@@ -200,7 +204,6 @@ h4{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
-    /* margin-top: 45px; */
 }
 .left_titles{
     padding-left: 5px;
@@ -285,12 +288,6 @@ i.linkedin {
     .header_menu ul{
         align-items: center;
     }
-    .header_menu li{
-        padding: 10px 0;
-    }
-    /* .header_menu{
-        right: -500%;
-    } */
 }
 
 @media (max-width: 898px){
@@ -320,9 +317,6 @@ i.linkedin {
         position: relative;
         z-index: 2;
     }
-    /* .header_list > li{
-        margin: 0 0 30px 0;
-    } */
     .header_list > li:last-child{
         margin-bottom: 0;
     }
@@ -339,7 +333,7 @@ i.linkedin {
         transform: translate(-100%, 0px);
         background-color: rgba(41, 43, 41, 0.9);
         padding: 100px 30px 30px 30px;
-        transition: all 0.3s ease 0s;
+        transition: translate 0.3s ease 0s;
         overflow: auto;
     }
     .header_menu._active{
@@ -377,12 +371,22 @@ i.linkedin {
         top: 50%;
         transform: scale(1) translate(0px, -50%);
     }
-    
+    .header_burger._active span{
+        transform: scale(0) translate(0px, -50%);
+    }
+    .header_burger._active::before{
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+    .header_burger._active::after{
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
     .my_code{
         font-size: 11px;
     }
     .prof{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .main_content{
         display: block;
@@ -457,7 +461,6 @@ i.linkedin {
     .rigth_content{
         width: 100%;
         padding: 14px 14px 0 14px;
-        /* margin-left: 5px; */
     }
     .left_content{
         width: 100%;
