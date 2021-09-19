@@ -40,12 +40,8 @@ body{
     color: #fff;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-.content{
-    min-height: 100%;
-    /* max-width: 1200px; */
-} 
 
-/* color variables */
+/* variables */
 
 :root{
     --main-color: #3be0fd;
@@ -69,47 +65,46 @@ body{
 	font-family:'storytella';
 	color: var(--text-color);
 }
-header{
+.header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 5;
     background-color: var(--light-gray);
 }
+.header_body{
+    position: relative;
+    height: 50px;
+    justify-content: space-evenly;
+}
 .header_content{
+    max-width: 1200px;
+    margin: 0px auto;
     display: flex;
-    padding: 0 50px;
+    padding: 0px 30px;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+.header_list{
+    display: flex;    
+}
+.header_burger{
+    display: none;
+}
+.header_menu{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--light-gray);
+    padding: 0 0 0 30px;
+}
+.header_menu ul{
     justify-content: space-between;
     align-items: center;
 }
-.header_logo{
-    border-radius: 50%;
-    background-color: #fff;
-    position: relative;
-    width: 40px;
-    height: 40px;
-}
-.header-nav{
-    max-height: 50px;
-    font-size: 20px;
-}
-
-.header-nav ul{
-    padding: 0;
-    margin: 0;
-}
-
-.header-nav ul{
-    justify-content: space-between;
-    align-items: center;
-}
-.header-nav li{
-    position: relative;
-    margin: 0 0 0 20px;
-}
-
-.header-nav a{
+.header_menu a{
     height: 30px;
     line-height: 50px;
     font-weight: 100;
@@ -117,17 +112,13 @@ header{
     transition: 0.2s;
     font-family: var(--font-family-title);
     color: white;
-}
-
-.header-nav a{
     padding: 0 20px 0 0;
 }
 
-li a:hover,
-li a:active{
+li a:hover{
+/* li a:active{ */
     color: var(--main-color);
 }
-
 p{
     font-size: var(--font-size-text);
     margin-bottom: 10px;
@@ -138,7 +129,6 @@ p{
 .content{
 	max-width: 1200px;
     margin: 0 auto;
-
 }
 .main_content{
     display: flex;
@@ -205,7 +195,6 @@ h4{
     scroll-margin-top: 4rem;
     padding: 5px 10px 25px 10px;
 }
-
 .foto{
     text-align: center;
     background-repeat: no-repeat;
@@ -240,8 +229,6 @@ i.linkedin {
 .my_code{
     background-color: var(--blue);
 }
-
-
 
 .education_content,
 .work_content{
@@ -280,11 +267,11 @@ i.linkedin {
 /* footer */
 
 #footer{
+    left: 0;
     width: 100%;
     z-index: 10;
     background-color: var(--light-gray);
     display: flex;
-    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 0 50px;
@@ -296,23 +283,19 @@ i.linkedin {
 
 @media (max-width: 1024px){
     .header_menu ul{
-        display: flex;
         align-items: center;
     }
-    .header_nav li{
+    .header_menu li{
         padding: 10px 0;
     }
-    .header_menu{
-        right: -100%;
-    }
+    /* .header_menu{
+        right: -500%;
+    } */
 }
 
 @media (max-width: 898px){
     body{
         font-size: 22px;
-    }
-    .my_code{
-        font-size: 14px;
     }
     main{
         width: 100%;
@@ -320,6 +303,75 @@ i.linkedin {
     h2{
         font-size: 30px;
         text-align: center;
+    }
+    .header::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--light-gray);
+        z-index: 3;
+    }
+    .header_list{
+        display: block;
+        list-style: none;
+        position: relative;
+        z-index: 2;
+    }
+    .header_body{
+        justify-content: space-between;
+    }
+    .header_menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--light-gray);
+        background-color: rgba(158, 163, 157, 0.9);
+    }
+    .header_burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 3;
+    }
+    .header_burger::before,
+    .header_burger::after{
+        content: '';
+        background-color: var(--white);
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        /* left: 0; */
+    }
+    .header_burger::before{
+        top:0
+    }
+    .header_burger::after{
+        bottom: 0;
+    }
+    .header_burger span{
+        position: absolute;
+        background-color: var(--white);
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+    }
+    /* .header_burger a:hover {
+        color: var(--main-color);
+    } */
+    /* .header_menu{
+        height: 100%;
+        padding-right: 10px;
+    } */
+    .my_code{
+        font-size: 11px;
     }
     .prof{
         margin-bottom: 30px;
@@ -331,29 +383,27 @@ i.linkedin {
     }
     .left_content{
         width: 100%;
-        padding: 50px 50px 0 50px;
+        padding: 30px 30px 0 30px;
         justify-content: space-evenly;
         align-items: center;
         text-align: center;
     }
     .contact_item{
-        text-align: center;
+        text-align: left;
         justify-content: space-evenly;
         align-items: center;
     }
     .contact_img{
-        padding-right: 50px;
-        width: 40%;
-        text-align: right;
+        width: 15%;
+        text-align: left;
     }
     .contact_content{
-        width: 60%;
+        width: 85%;
         text-align: left;
     }
     .rigth_content{
         width: 100%;
-        padding: 50px 50px 0 50px;
-        margin-left: 5px;
+        padding: 30px 30px 0 30px;
     }
     .info{
         display: block;
@@ -375,5 +425,37 @@ i.linkedin {
         width: 300px;
         height: 100%;
         padding-bottom: 20px;
+    }
+    .project_figure{
+        filter: none;
+    }
+}
+
+@media (max-width: 375px){
+    body{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 33px;
+    }
+    .my_code{
+        font-size: 10px;
+    }
+    .project_figure img{
+        width: 250px;
+        height: 100%;
+        padding-bottom: 15px;
+    }
+    .rigth_content{
+        width: 100%;
+        padding: 14px 14px 0 14px;
+        /* margin-left: 5px; */
+    }
+    .left_content{
+        width: 100%;
+        padding: 10px 10px 0 10px;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
     }
 }
