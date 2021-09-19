@@ -5,31 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script  src="./scripts/script.js"></script>
+    
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <title>CV</title>
 </head>
-<body>
+<body class="body">
     <div class="content">
         <!-- HEADER -->
         <header class="header">
             <div class="header_content">
-                <div class="header_logo"></div>
                 <div class="header_body">
-                    <div class="header_burger">
-                        <span>.<a href="#" class="burger"></a></span>
+                    <div class="header_burger" onclick="onToggle()">
+                        <span><a href="#" class="burger"></a></span>
                     </div>
                     <nav class="header_menu">
                         <ul class="header_list">
-                            <li><a href="#home" class="burger_link">Home</a></li>
-                            <li><a href="#about" class="burger_link">Summary</a></li>
-                            <li><a href="#education" class="burger_link">Education</a></li>
-                            <li><a href="#skills" class="burger_link"></i>Skills</a></li>
-                            <li><a href="#work_experience" class="burger_link">Experience</a></li>
-                            <li><a href="#code_example" class="burger_link">Code</a></li>
-                            <li><a href="#languages" class="burger_link">Languages</a></li>
-                            <li><a href="#hobbies" class="burger_link">Hobbies</a></li>
-                            <li><a href="#contacts" class="burger_link">Contacts</a></li>
+                            <li><a href="#home" class="burger_link" onclick="onToggle()">Home</a></li>
+                            <li><a href="#about" class="burger_link" onclick="onToggle()">Summary</a></li>
+                            <li><a href="#education" class="burger_link" onclick="onToggle()">Education</a></li>
+                            <li><a href="#skills" class="burger_link" onclick="onToggle()"></i>Skills</a></li>
+                            <li><a href="#work_experience" class="burger_link" onclick="onToggle()">Experience</a></li>
+                            <li><a href="#code_example" class="burger_link" onclick="onToggle()">Code</a></li>
+                            <li><a href="#languages" class="burger_link" onclick="onToggle()">Languages</a></li>
+                            <li><a href="#hobbies" class="burger_link" onclick="onToggle()">Hobbies</a></li>
+                            <li><a href="#contacts" class="burger_link" onclick="onToggle()">Contacts</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -259,4 +258,5 @@ return res;
         </footer>
     </div>
 </body>
+<script  src="./scripts/script.js"></script>
 </html>

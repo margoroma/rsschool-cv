@@ -65,6 +65,9 @@ body{
 	font-family:'storytella';
 	color: var(--text-color);
 }
+body._lock{
+    overflow: hidden;
+}
 .header{
     position: fixed;
     top: 0;
@@ -285,9 +288,9 @@ i.linkedin {
     .header_menu ul{
         align-items: center;
     }
-    .header_menu li{
+    /* .header_menu li{
         padding: 10px 0;
-    }
+    } */
     /* .header_menu{
         right: -500%;
     } */
@@ -339,7 +342,7 @@ i.linkedin {
         transform: translate(-100%, 0px);
         background-color: rgba(41, 43, 41, 0.9);
         padding: 100px 30px 30px 30px;
-        transition: all 0.3s ease 0s;
+        transition: translate 0.3s ease 0s;
         overflow: auto;
     }
     .header_menu._active{
@@ -377,7 +380,17 @@ i.linkedin {
         top: 50%;
         transform: scale(1) translate(0px, -50%);
     }
-    
+    .header_burger._active span{
+        transform: scale(0) translate(0px, -50%);
+    }
+    .header_burger._active::before{
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+    .header_burger._active::after{
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
     .my_code{
         font-size: 11px;
     }
