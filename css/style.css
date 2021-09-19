@@ -77,7 +77,6 @@ body{
     position: relative;
     height: 50px;
     justify-content: space-evenly;
-}
 .header_content{
     max-width: 1200px;
     margin: 0px auto;
@@ -438,6 +437,7 @@ i.linkedin {
         filter: none;
     }
 }
+
 
 @media (max-width: 375px){
     body{
