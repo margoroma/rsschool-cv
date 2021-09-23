@@ -1,0 +1,348 @@
+/* null */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+/* variables */
+
+:root {
+    --bgr-color-dark: #030303;
+    --bgr-color-light: #DBDBDB;
+    --font-family-roboto: 'Roboto';
+    --font-family-forum: 'Forum';
+    --black: #000000;
+    --white: #FFFFFF;
+    --red: #710707;
+    --gold: #9D8665;
+}
+
+/* general */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+html,
+body {
+    scroll-behavior: smooth;
+    height: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+h1 {
+    display: none;
+}
+
+.line {
+    position: relative;
+}
+
+.line::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background-color: var(--red);
+}
+
+/* header */
+
+.header {
+    height: 150px;
+    background-color: var(--black);
+    z-index: 3;
+}
+.header_body,
+.header_footer_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_body {
+    padding-top: 59px;
+}
+.header_footer_logo {
+    width: 199px;
+    padding: 9px 0 15px;
+    flex-wrap: wrap;
+}
+
+.header_footer_logo, 
+.header_link {
+    color: var(--white);
+    font-style: var(--font-style-normal);
+}
+.header_footer_logo span {
+    font-family: var(--font-family-forum);    
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 31px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    bottom: 0;
+}
+.header_menu {
+    width: 775px;
+    height: 26px;
+}
+.header_list {
+    display: flex;
+    justify-content: space-between;
+}
+.header_link {
+    font-family: var(--font-family-roboto);
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+}
+.header_list > li:last-child{
+    margin-right: 0;
+}
+
+.header_footer_logo:hover .logo svg,
+.header_footer_logo span:hover,
+.header_link:hover {
+    
+    fill: var(--gold);
+    color: var(--gold);
+}
+
+/* welcome (visiting page) */
+
+.visiting {
+    background: var(--black);
+    height: 810px;
+}
+.visiting_content {
+    display: flex;
+}
+.visiting_left {
+    position: absolute;
+}
+.visiting_right {
+    margin-left: auto;
+}
+.visiting_welcome {
+    width: 600px;
+    height: 180px;
+    margin-top: 150px;
+    font-family: var(--font-family-forum);
+    font-style: normal;
+    font-weight: 100;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--white);
+    /* z-index: 2; */
+}
+.visiting_description {
+    width: 445px;
+    height: 33px;
+    margin-top: 25px;
+    font-family: var(--font-family-roboto);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 2px;
+    color: var(--white);
+    text-align: center;
+}
+.visiting_botton_link {
+    margin-top: 75px;
+    width: 360px;
+    height: 75px;
+    text-align: center;
+    color: var(--white);
+    font-size: 22px;
+    font-family: var(--font-family-roboto);
+    font-weight: 100;
+    letter-spacing: 2px;
+    max-width: 360px;
+    line-height: 75px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--red);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.visiting_botton_link:hover {
+    background-color: #9D8665;
+}
+
+.visiting__botton {
+    width: 360px;
+    height: 75px;
+    font-family: var(--font-family-roboto);
+    font-style: normal;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2px;
+    color: var(--white);
+    padding: 76px 0 0 0;
+}
+.visiting_collage {
+    width: 1000px;
+    height: 750px;
+    margin-top: auto;
+}
+.visiting_menu {
+    position: absolute;
+    width: 600px;
+    height: 120px;
+    background-color: var(--red);
+    right: 0px;
+    z-index: 2; 
+}
+
+/* visiting / virtual tour */
+
+.visiting__container {
+    height: 1114px;
+}
+.visiting-section {
+    padding: 77px 0 75px 0;
+}
+
+.visiting__title{
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    /* padding: 75px 0 0 0; */
+}
+
+.visiting_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 75px;
+    padding-top: 105px;
+}
+
+.visiting_pic_block {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.visiting_pic_block:hover h3 {
+    color: var(--gold);
+}
+
+.visiting_pic_block:last-child {
+    margin-right: 0;
+}
+
+.visit_360 {
+    font-family: var(--font-family-roboto);
+    font-style: thin;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 25px;
+    color: var(--black);
+    padding-top: 20px;
+}
+
+.visit_google_panarama {
+    font-family: var(--font-family-roboto);
+    font-style: thin;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--black);
+    padding-top: 10px;
+    letter-spacing: normal;
+}
+
+.about {
+    display:inline-block;
+    font-family: var(--font-family-forum);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--black);
+    padding-bottom: 9px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.line_card::after {
+    bottom: -11px;
+    right: 140px;
+    height: 2px;
+    transition: 0.5s;
+}
+
+.visiting_pic_block:hover .line_card::after {
+    right: 0px;
+}
+
+
+/* explore */
+
+.explore-section {
+    height: 865px;
+    background-color: var(--bgr-color-dark);
+}
+
+.explore_container {
+    display: flex;
+}
+
+.explore_left {
+    position: absolute;
+    color: var(--white);
+}
+.explore_right {
+    margin-left: auto;
+    display: flex;
+}
